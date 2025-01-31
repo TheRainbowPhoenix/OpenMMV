@@ -1,0 +1,1 @@
+RPG_MANAGERS_VERSION = "1.0a";

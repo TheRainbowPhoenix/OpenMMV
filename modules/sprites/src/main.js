@@ -1,0 +1,1 @@
+RPG_CORE_VERSION = "1.0"

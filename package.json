@@ -1,0 +1,23 @@
+{
+  "name": "openmmv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:core": "rollup -c modules/core/rollup.config.mjs",
+    "build:managers": "rollup -c modules/managers/rollup.config.mjs",
+    "build:objects": "rollup -c modules/objects/rollup.config.mjs",
+    "build:scenes": "rollup -c modules/scenes/rollup.config.mjs",
+    "build:sprites": "rollup -c modules/sprites/rollup.config.mjs",
+    "build:windows": "rollup -c modules/windows/rollup.config.mjs",
+    "build": "npm run build:core && npm run build:managers && npm run build:objects && npm run build:scenes && npm run build:sprites && npm run build:windows"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.32.1"
+  }
+}

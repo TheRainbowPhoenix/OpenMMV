@@ -1,0 +1,4 @@
+https://pixijs.download/v8.7.3/pixi.js
+https://cdn.jsdelivr.net/npm/@pixi/tilemap@5.0.1/dist/pixi-tilemap.js
+https://cdn.jsdelivr.net/npm/@pixi/picture@4.0.1/dist/pixi-picture.js
+https://cdn.jsdelivr.net/npm/fpsmeter@0.3.1/dist/fpsmeter.js
