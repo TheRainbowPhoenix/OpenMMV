@@ -6,9 +6,10 @@ export default {
     name: "CoreBundle",
     globals: {
       PIXI: "PIXI",
+      Utils: 'Utils',
     },
     strict: false,
   },
-  external: ["PIXI"],
+  external: ["PIXI", "Utils"],
   treeshake: false, // Disable tree-shaking to include all code
 };
