@@ -1,5 +1,6 @@
 import Utils from './utils'
 import Decrypter from './decrypter.js'
+import ResourceHandler from './resource_handler.js'
 
 /**
  * The audio object of Web Audio API.

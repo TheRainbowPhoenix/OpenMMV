@@ -189,7 +189,8 @@ Graphics.render = function(stage) {
  * @return {Boolean} True if the renderer type is WebGL
  */
 Graphics.isWebGL = function() {
-    return this._renderer && this._renderer.type === PIXI.RENDERER_TYPE.WEBGL;
+    // return this._renderer && this._renderer.type === PIXI.RENDERER_TYPE.WEBGL;
+    return false;
 };
 
 /**
@@ -200,12 +201,13 @@ Graphics.isWebGL = function() {
  * @return {Boolean} True if the current browser supports WebGL.
  */
 Graphics.hasWebGL = function() {
-    try {
-        var canvas = document.createElement('canvas');
-        return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
-    } catch (e) {
-        return false;
-    }
+    // try {
+    // 	var canvas = document.createElement('canvas');
+    // 	return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+    // } catch (e) {
+    // 	return false;
+    // }
+    return true;
 };
 
 /**
@@ -237,8 +239,8 @@ Graphics.canUseSaturationBlend = function() {
  * @method setLoadingImage
  */
 Graphics.setLoadingImage = function(src) {
-    this._loadingImage = new Image();
-    this._loadingImage.src = src;
+    // this._loadingImage = new Image();
+    // this._loadingImage.src = src;
 };
 
 /**
