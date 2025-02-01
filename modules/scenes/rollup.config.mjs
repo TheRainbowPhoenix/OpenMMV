@@ -11,4 +11,5 @@ export default {
   },
   external: ["PIXI"],
   treeshake: false,
+  context: 'this',
 };

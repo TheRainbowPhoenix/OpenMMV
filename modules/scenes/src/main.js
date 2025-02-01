@@ -1,4 +1,5 @@
 import Scene_Base from './scene_base.js'
+
 import Scene_Boot from './scene_boot.js'
 import Scene_Title from './scene_title.js'
 import Scene_Map from './scene_map.js'

@@ -4,20 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:prod": "rollup -c rollup.config.mjs",
+    "build:runtime": "node scripts/bundle.js",
     "build:core": "rollup -c modules/core/rollup.config.mjs",
     "build:managers": "rollup -c modules/managers/rollup.config.mjs",
     "build:objects": "rollup -c modules/objects/rollup.config.mjs",
     "build:scenes": "rollup -c modules/scenes/rollup.config.mjs",
     "build:sprites": "rollup -c modules/sprites/rollup.config.mjs",
     "build:windows": "rollup -c modules/windows/rollup.config.mjs",
-    "build": "npm run build:core && npm run build:managers && npm run build:objects && npm run build:scenes && npm run build:sprites && npm run build:windows"
+    "build:modules": "npm run build:runtime && npm run build:core && npm run build:managers && npm run build:objects && npm run build:scenes && npm run build:sprites && npm run build:windows"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "fpsmeter": "0.3.1",
+    "iphone-inline-video": "1.9.6",
+    "lz-string": "1.3.6",
+    "pixi-picture": "1.1.0",
+    "pixi-tilemap": "1.2.6",
+    "pixi.js": "4.5.4"
+  },
   "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@types/pixi.js": "^5.0.0",
     "rollup": "^4.32.1"
   }
 }

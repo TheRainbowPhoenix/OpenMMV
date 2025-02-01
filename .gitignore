@@ -13,6 +13,14 @@ node_modules
 dist-ssr
 *.local
 
+plugins
+
+dist/img
+dist/data
+dist/audio
+dist/fonts
+
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -11,4 +11,5 @@ export default {
   },
   external: ["PIXI"],
   treeshake: false, // Disable tree-shaking to include all code
+  context: 'this',
 };
