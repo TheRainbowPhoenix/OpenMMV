@@ -6,7 +6,7 @@ import Window_HorzCommand from './window_horz_command.js';
 //
 // The window for selecting a category of items on the item and shop screens.
 
-function Window_ItemCategory() {
+Window_ItemCategory = function () {
     this.initialize.apply(this, arguments);
 }
 

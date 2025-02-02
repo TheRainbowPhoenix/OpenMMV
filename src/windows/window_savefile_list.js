@@ -6,7 +6,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for selecting a save file on the save and load screens.
 
-function Window_SavefileList() {
+Window_SavefileList = function () {
     this.initialize.apply(this, arguments);
 }
 

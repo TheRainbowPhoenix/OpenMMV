@@ -6,7 +6,7 @@ import Window_Base from './window_base.js';
 //
 // The window for editing an actor's name on the name input screen.
 
-function Window_NameEdit() {
+Window_NameEdit = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -6,7 +6,7 @@ import '../stores';
 //
 // The window for selecting a target enemy on the battle screen.
 
-function Window_BattleEnemy() {
+Window_BattleEnemy = function () {
     this.initialize.apply(this, arguments);
 }
 

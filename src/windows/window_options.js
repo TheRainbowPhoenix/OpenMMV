@@ -6,7 +6,7 @@ import Window_Command from './window_command.js'
 //
 // The window for changing various settings on the options screen.
 
-function Window_Options() {
+Window_Options = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -6,7 +6,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for displaying full status on the status screen.
 
-function Window_Status() {
+Window_Status = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -5,7 +5,7 @@ import Window_Base from './window_base.js';
 //
 // The window for displaying the description of the selected item.
 
-function Window_Help() {
+Window_Help = function () {
     this.initialize.apply(this, arguments);
 }
 

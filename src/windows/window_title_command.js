@@ -6,7 +6,7 @@ import Window_Command from './window_command.js'
 //
 // The window for selecting New Game/Continue on the title screen.
 
-function Window_TitleCommand() {
+Window_TitleCommand = function () {
     this.initialize.apply(this, arguments);
 }
 

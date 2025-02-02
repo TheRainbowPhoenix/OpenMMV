@@ -5,7 +5,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The superclass of windows for selecting a command.
 
-function Window_Command() {
+Window_Command = function () {
     this.initialize.apply(this, arguments);
 }
 

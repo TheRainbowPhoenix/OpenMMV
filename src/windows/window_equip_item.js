@@ -5,7 +5,7 @@ import Window_ItemList from './window_item_list.js'
 //
 // The window for selecting an equipment item on the equipment screen.
 
-function Window_EquipItem() {
+Window_EquipItem = function () {
     this.initialize.apply(this, arguments);
 }
 

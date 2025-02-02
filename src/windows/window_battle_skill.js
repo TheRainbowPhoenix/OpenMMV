@@ -5,7 +5,7 @@ import Window_SkillList from './window_skill_list.js';
 //
 // The window for selecting a skill to use on the battle screen.
 
-function Window_BattleSkill() {
+Window_BattleSkill = function () {
     this.initialize.apply(this, arguments);
 }
 

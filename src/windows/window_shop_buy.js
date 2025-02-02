@@ -7,7 +7,7 @@ import '../stores';
 //
 // The window for selecting an item to buy on the shop screen.
 
-function Window_ShopBuy() {
+Window_ShopBuy = function () {
     this.initialize.apply(this, arguments);
 }
 

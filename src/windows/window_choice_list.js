@@ -6,7 +6,7 @@ import Window_Command from './window_command.js'
 //
 // The window used for the event command [Show Choices].
 
-function Window_ChoiceList() {
+Window_ChoiceList = function () {
     this.initialize.apply(this, arguments);
 }
 

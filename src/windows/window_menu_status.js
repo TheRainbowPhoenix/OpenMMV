@@ -7,7 +7,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for displaying party member status on the menu screen.
 
-function Window_MenuStatus() {
+Window_MenuStatus = function () {
     this.initialize.apply(this, arguments);
 }
 

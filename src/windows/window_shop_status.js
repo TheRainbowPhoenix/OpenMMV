@@ -7,7 +7,7 @@ import Window_Base from './window_base.js';
 // The window for displaying number of items in possession and the actor's
 // equipment on the shop screen.
 
-function Window_ShopStatus() {
+Window_ShopStatus = function () {
     this.initialize.apply(this, arguments);
 }
 

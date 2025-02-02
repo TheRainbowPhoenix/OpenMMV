@@ -3,7 +3,7 @@ import Window_Command from './window_command.js'
 //
 // The command window for the horizontal selection format.
 
-function Window_HorzCommand() {
+Window_HorzCommand = function () {
     this.initialize.apply(this, arguments);
 }
 

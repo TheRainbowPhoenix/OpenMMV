@@ -8,7 +8,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window used for the event command [Input Number].
 
-function Window_NumberInput() {
+Window_NumberInput = function () {
     this.initialize.apply(this, arguments);
 }
 

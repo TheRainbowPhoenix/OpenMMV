@@ -7,7 +7,7 @@ import Window_Command from './window_command.js'
 //
 // The window for selecting a command on the menu screen.
 
-function Window_MenuCommand() {
+Window_MenuCommand = function () {
     this.initialize.apply(this, arguments);
 }
 

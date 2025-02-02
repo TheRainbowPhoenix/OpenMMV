@@ -6,7 +6,7 @@ import Window_Command from './window_command.js'
 //
 // The window for selecting "Go to Title" on the game end screen.
 
-function Window_GameEnd() {
+Window_GameEnd = function () {
     this.initialize.apply(this, arguments);
 }
 

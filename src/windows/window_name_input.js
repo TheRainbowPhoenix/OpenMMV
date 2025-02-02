@@ -6,7 +6,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for selecting text characters on the name input screen.
 
-function Window_NameInput() {
+Window_NameInput = function () {
     this.initialize.apply(this, arguments);
 }
 

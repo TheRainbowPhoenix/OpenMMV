@@ -6,7 +6,7 @@ import Window_Base from './window_base.js';
 //
 // The window for displaying parameter changes on the equipment screen.
 
-function Window_EquipStatus() {
+Window_EquipStatus = function () {
     this.initialize.apply(this, arguments);
 }
 

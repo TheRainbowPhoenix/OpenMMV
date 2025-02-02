@@ -11,7 +11,7 @@ import Window_EventItem from './window_event_item.js';
 //
 // The window for displaying text messages.
 
-function Window_Message() {
+Window_Message = function () {
     this.initialize.apply(this, arguments);
 }
 

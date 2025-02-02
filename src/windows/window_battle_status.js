@@ -6,7 +6,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for displaying the status of party members on the battle screen.
 
-function Window_BattleStatus() {
+Window_BattleStatus = function () {
     this.initialize.apply(this, arguments);
 }
 

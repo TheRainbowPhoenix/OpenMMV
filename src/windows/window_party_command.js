@@ -6,7 +6,7 @@ import Window_Command from './window_command.js'
 //
 // The window for selecting whether to fight or escape on the battle screen.
 
-function Window_PartyCommand() {
+Window_PartyCommand = function () {
     this.initialize.apply(this, arguments);
 }
 

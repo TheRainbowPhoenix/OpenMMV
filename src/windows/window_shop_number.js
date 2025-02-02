@@ -8,7 +8,7 @@ import Window_Selectable from './window_selectable.js';
 // The window for inputting quantity of items to buy or sell on the shop
 // screen.
 
-function Window_ShopNumber() {
+Window_ShopNumber = function () {
     this.initialize.apply(this, arguments);
 }
 

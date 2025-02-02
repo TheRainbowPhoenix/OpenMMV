@@ -7,7 +7,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for displaying switches and variables on the debug screen.
 
-function Window_DebugEdit() {
+Window_DebugEdit = function () {
     this.initialize.apply(this, arguments);
 }
 

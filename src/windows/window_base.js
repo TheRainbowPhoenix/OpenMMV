@@ -8,7 +8,7 @@ import '../context.js';
 //
 // The superclass of all windows within the game.
 
-function Window_Base() {
+Window_Base = function() {
     this.initialize.apply(this, arguments);
 }
 

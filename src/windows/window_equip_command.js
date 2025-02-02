@@ -6,7 +6,7 @@ import Window_HorzCommand from './window_horz_command.js';
 //
 // The window for selecting a command on the equipment screen.
 
-function Window_EquipCommand() {
+Window_EquipCommand = function () {
     this.initialize.apply(this, arguments);
 }
 

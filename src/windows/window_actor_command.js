@@ -7,7 +7,7 @@ import Window_Command from './window_command.js'
 //
 // The window for selecting an actor's action on the battle screen.
 
-function Window_ActorCommand() {
+Window_ActorCommand = function () {
     this.initialize.apply(this, arguments);
 }
 

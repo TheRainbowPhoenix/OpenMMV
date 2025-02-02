@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:runtime && npm run build:prod",
     "build:prod": "vite build",
     "build:prod:rollup": "rollup -c rollup.config.mjs",
     "build:runtime": "node scripts/bundle.js",

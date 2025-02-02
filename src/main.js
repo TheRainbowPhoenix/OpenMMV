@@ -179,3 +179,5 @@ import {
   Window_DebugEdit,
 } from "./windows/index"
  */
+
+import './make_global'

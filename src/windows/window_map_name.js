@@ -5,7 +5,7 @@ import Window_Base from './window_base.js';
 //
 // The window for displaying the map name on the map screen.
 
-function Window_MapName() {
+Window_MapName = function () {
     this.initialize.apply(this, arguments);
 }
 

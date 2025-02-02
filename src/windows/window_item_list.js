@@ -6,7 +6,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for selecting an item on the item screen.
 
-function Window_ItemList() {
+Window_ItemList = function () {
     this.initialize.apply(this, arguments);
 }
 

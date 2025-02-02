@@ -6,7 +6,7 @@ import Window_HorzCommand from './window_horz_command.js';
 //
 // The window for selecting buy/sell on the shop screen.
 
-function Window_ShopCommand() {
+Window_ShopCommand = function () {
     this.initialize.apply(this, arguments);
 }
 

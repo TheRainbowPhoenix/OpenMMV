@@ -6,7 +6,7 @@ import Window_Base from './window_base.js';
 //
 // The window for displaying the party's gold.
 
-function Window_Gold() {
+Window_Gold = function () {
     this.initialize.apply(this, arguments);
 }
 

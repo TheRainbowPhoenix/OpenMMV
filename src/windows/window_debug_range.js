@@ -7,7 +7,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for selecting a block of switches/variables on the debug screen.
 
-function Window_DebugRange() {
+Window_DebugRange = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -6,7 +6,7 @@ import Window_ItemList from './window_item_list.js'
 //
 // The window used for the event command [Select Item].
 
-function Window_EventItem() {
+Window_EventItem = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -6,7 +6,7 @@ import Window_Base from './window_base.js';
 //
 // The window class with cursor movement and scroll functions.
 
-function Window_Selectable() {
+Window_Selectable = function () {
     this.initialize.apply(this, arguments);
 }
 

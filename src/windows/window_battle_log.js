@@ -11,7 +11,7 @@ import '../stores';
 // The window for displaying battle progress. No frame is displayed, but it is
 // handled as a window for convenience.
 
-function Window_BattleLog() {
+Window_BattleLog = function () {
     this.initialize.apply(this, arguments);
 }
 

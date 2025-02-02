@@ -9,7 +9,7 @@ export default defineConfig({
       entry: "./src/main.js", // Entry point
       name: "OpenMMV", // Global variable name
       fileName: (format, entryName) => `openmmv.js`,
-      formats: ["es"], // Module format
+      formats: ["iife"], // Module format
     },
     rollupOptions: {
       external: ["PIXI"], // Mark PIXI as external to avoid bundling

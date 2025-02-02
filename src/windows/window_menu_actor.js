@@ -7,7 +7,7 @@ import Window_MenuStatus from './window_menu_status.js';
 //
 // The window for selecting a target actor on the item and skill screens.
 
-function Window_MenuActor() {
+Window_MenuActor = function () {
     this.initialize.apply(this, arguments);
 }
 

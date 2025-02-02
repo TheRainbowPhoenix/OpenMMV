@@ -5,7 +5,7 @@ import Window_Selectable from './window_selectable.js';
 //
 // The window for selecting a skill on the skill screen.
 
-function Window_SkillList() {
+Window_SkillList = function () {
     this.initialize.apply(this, arguments);
 }
 

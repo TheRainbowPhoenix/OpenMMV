@@ -5,7 +5,7 @@ import Window_ItemList from './window_item_list.js'
 //
 // The window for selecting an item to use on the battle screen.
 
-function Window_BattleItem() {
+Window_BattleItem = function () {
     this.initialize.apply(this, arguments);
 }
 

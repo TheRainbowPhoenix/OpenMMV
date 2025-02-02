@@ -6,7 +6,7 @@ import Window_Command from './window_command.js'
 //
 // The window for selecting a skill type on the skill screen.
 
-function Window_SkillType() {
+Window_SkillType = function () {
     this.initialize.apply(this, arguments);
 }
 

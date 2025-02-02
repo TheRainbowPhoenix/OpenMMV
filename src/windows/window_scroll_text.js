@@ -7,7 +7,7 @@ import Window_Base from './window_base.js';
 // The window for displaying scrolling text. No frame is displayed, but it
 // is handled as a window for convenience.
 
-function Window_ScrollText() {
+Window_ScrollText = function () {
     this.initialize.apply(this, arguments);
 }
 
