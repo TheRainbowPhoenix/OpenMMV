@@ -1,9 +1,12 @@
+import '../stores';
+import '../context.js';
+
 // Game_Item
 //
 // The game object class for handling skills, items, weapons, and armor. It is
 // required because save data should not include the database object itself.
 
-function Game_Item() {
+Game_Item = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -1,11 +1,10 @@
-import StorageManager from "./storage_manager"
-import AudioManager from "./audio_manager";
+import '../context.js'
 
 // ConfigManager
 //
 // The static class that manages the configuration data.
 
-function ConfigManager() {
+ConfigManager = function () {
     throw new Error('This is a static class');
 }
 

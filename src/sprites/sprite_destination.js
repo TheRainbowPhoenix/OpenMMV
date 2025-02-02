@@ -1,8 +1,11 @@
+import '../context.js';
+import Sprite from "../core/sprite.js";
+/* Imports */
 // Sprite_Destination
 //
 // The sprite for displaying the destination place of the touch input.
 
-function Sprite_Destination() {
+Sprite_Destination = function () {
     this.initialize.apply(this, arguments);
 }
 

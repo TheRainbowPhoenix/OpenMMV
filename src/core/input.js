@@ -1,12 +1,11 @@
-import Utils from './utils'
-import ResourceHandler from './resource_handler.js'
+import '../context.js'
 
 /**
  * The static class that handles input data from the keyboard and gamepads.
  *
  * @class Input
  */
-function Input() {
+Input = function () {
     throw new Error('This is a static class');
 }
 

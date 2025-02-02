@@ -1,11 +1,11 @@
-import Graphics from './graphics.js'
+import '../context.js'
 
 /**
  * The static class that handles resource loading.
  *
  * @class ResourceHandler
  */
-function ResourceHandler() {
+ResourceHandler = function() {
     throw new Error('This is a static class');
 }
 

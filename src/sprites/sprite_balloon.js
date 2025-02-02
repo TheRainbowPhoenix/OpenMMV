@@ -1,8 +1,11 @@
+import '../context.js';
+import '../context.js';
+/* Imports */
 // Sprite_Balloon
 //
 // The sprite for displaying a balloon icon.
 
-function Sprite_Balloon() {
+Sprite_Balloon = function () {
     this.initialize.apply(this, arguments);
 }
 

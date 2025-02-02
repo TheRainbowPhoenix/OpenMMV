@@ -1,3 +1,5 @@
+import '../context.js'
+
 /**
  * The rectangle class.
  *
@@ -8,7 +10,7 @@
  * @param {Number} width The width of the rectangle
  * @param {Number} height The height of the rectangle
  */
-function Rectangle() {
+Rectangle = function () {
   this.initialize.apply(this, arguments);
 }
 

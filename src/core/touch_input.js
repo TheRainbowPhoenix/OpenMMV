@@ -1,12 +1,11 @@
-import Utils from './utils'
-import Graphics from './graphics.js'
+import '../context.js'
 
 /**
  * The static class that handles input data from the mouse and touchscreen.
  *
  * @class TouchInput
  */
-function TouchInput() {
+TouchInput = function () {
     throw new Error('This is a static class');
 }
 

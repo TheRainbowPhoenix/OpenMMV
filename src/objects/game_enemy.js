@@ -1,10 +1,13 @@
+import '../stores';
+import '../context.js';
+
 import Game_Battler from './game_battler.js';
 
 // Game_Enemy
 //
 // The game object class for an enemy.
 
-function Game_Enemy() {
+Game_Enemy = function () {
     this.initialize.apply(this, arguments);
 }
 

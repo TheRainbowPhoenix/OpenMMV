@@ -1,8 +1,10 @@
+import '../context.js';
+
 // ImageManager
 //
 // The static class that loads images, creates bitmap objects and retains them.
 
-function ImageManager() {
+ImageManager = function () {
     throw new Error('This is a static class');
 }
 

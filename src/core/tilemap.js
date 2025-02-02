@@ -1,7 +1,4 @@
-import Point from './point.js';
-import Graphics from './graphics.js';
-import Bitmap from './bitmap.js';
-import Sprite from './sprite.js';
+import '../context.js'
 
 /**
  * The tilemap which displays 2D tile-based game map.
@@ -9,7 +6,7 @@ import Sprite from './sprite.js';
  * @class Tilemap
  * @constructor
  */
-function Tilemap() {
+Tilemap = function () {
     this.initialize.apply(this, arguments);
 }
 

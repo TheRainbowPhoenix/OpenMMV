@@ -1,8 +1,10 @@
+import '../stores';
+import '../context.js';
 // Game_Variables
 //
 // The game object class for variables.
 
-function Game_Variables() {
+Game_Variables = function () {
     this.initialize.apply(this, arguments);
 }
 

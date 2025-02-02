@@ -1,8 +1,13 @@
+import '../context.js';
+
+import Sprite_Battler from "./sprite_battler.js"
+
+/* Imports */
 // Sprite_Actor
 //
 // The sprite for displaying an actor.
 
-function Sprite_Actor() {
+Sprite_Actor = function () {
     this.initialize.apply(this, arguments);
 }
 

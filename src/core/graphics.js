@@ -1,12 +1,11 @@
-import Utils from './utils'
-import ResourceHandler from './resource_handler.js'
+import '../context.js'
 
 /**
  * The static class that carries out graphics processing.
  *
  * @class Graphics
  */
-function Graphics() {
+Graphics = function () {
     throw new Error('This is a static class');
 }
 
@@ -162,22 +161,22 @@ Graphics.tickEnd = function() {
  * @param {Stage} stage The stage object to be rendered
  */
 Graphics.render = function(stage) {
-    // if (this._skipCount === 0) {
-    //     var startTime = Date.now();
-    //     if (stage) {
-    //         this._renderer.render(stage);
-    //         if (this._renderer.gl && this._renderer.gl.flush) {
-    //             this._renderer.gl.flush();
-    //         }
-    //     }
-    //     var endTime = Date.now();
-    //     var elapsed = endTime - startTime;
-    //     this._skipCount = Math.min(Math.floor(elapsed / 15), this._maxSkip);
-    //     this._rendered = true;
-    // } else {
-    //     this._skipCount--;
-    //     this._rendered = false;
-    // }
+    if (this._skipCount === 0) {
+        var startTime = Date.now();
+        if (stage) {
+            this._renderer.render(stage);
+            if (this._renderer.gl && this._renderer.gl.flush) {
+                this._renderer.gl.flush();
+            }
+        }
+        var endTime = Date.now();
+        var elapsed = endTime - startTime;
+        this._skipCount = Math.min(Math.floor(elapsed / 15), this._maxSkip);
+        this._rendered = true;
+    } else {
+        this._skipCount--;
+        this._rendered = false;
+    }
     this.frameCount++;
 };
 
@@ -189,8 +188,7 @@ Graphics.render = function(stage) {
  * @return {Boolean} True if the renderer type is WebGL
  */
 Graphics.isWebGL = function() {
-    // return this._renderer && this._renderer.type === PIXI.RENDERER_TYPE.WEBGL;
-    return false;
+    return this._renderer && this._renderer.type === PIXI.RENDERER_TYPE.WEBGL;
 };
 
 /**
@@ -201,13 +199,12 @@ Graphics.isWebGL = function() {
  * @return {Boolean} True if the current browser supports WebGL.
  */
 Graphics.hasWebGL = function() {
-    // try {
-    // 	var canvas = document.createElement('canvas');
-    // 	return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
-    // } catch (e) {
-    // 	return false;
-    // }
-    return true;
+    try {
+        var canvas = document.createElement('canvas');
+        return !!(canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+    } catch (e) {
+        return false;
+    }
 };
 
 /**
@@ -239,8 +236,8 @@ Graphics.canUseSaturationBlend = function() {
  * @method setLoadingImage
  */
 Graphics.setLoadingImage = function(src) {
-    // this._loadingImage = new Image();
-    // this._loadingImage.src = src;
+    this._loadingImage = new Image();
+    this._loadingImage.src = src;
 };
 
 /**

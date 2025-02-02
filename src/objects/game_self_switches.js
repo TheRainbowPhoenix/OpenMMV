@@ -1,8 +1,9 @@
+import '../context.js';
 // Game_SelfSwitches
 //
 // The game object class for self switches.
 
-function Game_SelfSwitches() {
+Game_SelfSwitches = function () {
     this.initialize.apply(this, arguments);
 }
 

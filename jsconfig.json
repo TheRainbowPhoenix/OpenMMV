@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "useDefineForClassFields": true,
+      "module": "ESNext",
+      "lib": ["ESNext", "DOM"],
+      "moduleResolution": "Node",
+      "allowJs": true,
+      "checkJs": true,
+      "types": ["@types/pixi.js"],
+      "typeRoots": ["./node_modules/@types", "./types"],
+      "strict": false,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "noEmit": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": true,
+      "skipLibCheck": true
+    },
+    "include": ["modules/**/*.js", "modules/**/*.ts", "types/globals.d.ts"]
+  }

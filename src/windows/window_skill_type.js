@@ -1,3 +1,5 @@
+import '../stores';
+import '../context.js';
 import Window_Command from './window_command.js'
 
 // Window_SkillType

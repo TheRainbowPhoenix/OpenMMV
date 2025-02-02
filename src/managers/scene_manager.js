@@ -1,12 +1,10 @@
-import ImageManager from "./image_manager";
-import AudioManager from "./audio_manager";
-import PluginManager from './plugin_manager.js';
+import '../context.js'
 
 // SceneManager
 //
 // The static class that manages scene transitions.
 
-function SceneManager() {
+SceneManager = function () {
     throw new Error('This is a static class');
 }
 

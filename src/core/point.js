@@ -1,3 +1,4 @@
+import '../context.js'
 /**
  * The point class.
  *
@@ -6,7 +7,7 @@
  * @param {Number} x The x coordinate
  * @param {Number} y The y coordinate
  */
-function Point() {
+Point = function () {
     this.initialize.apply(this, arguments);
 }
 

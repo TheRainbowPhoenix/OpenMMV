@@ -1,3 +1,4 @@
+import '../context.js'
 /**
  * The resource class. Allows to be collected as a garbage if not use for some time or ticks
  *
@@ -7,7 +8,7 @@
  * @param {string} key, url of the resource
  * @param {string} item - Bitmap, HTML5Audio, WebAudio - whatever you want to store in the cache
  */
-function CacheEntry(cache, key, item) {
+CacheEntry = function (cache, key, item) {
     this.cache = cache;
     this.key = key;
     this.item = item;
@@ -83,7 +84,7 @@ CacheEntry.prototype.touch = function () {
  * @param manager
  * @constructor
  */
-function CacheMap(manager) {
+CacheMap = function (manager) {
     this.manager = manager;
     this._inner = {};
     this._lastRemovedEntries = {};
@@ -148,7 +149,7 @@ CacheMap.prototype.update = function(ticks, delta) {
     }
 };
 
-function ImageCache(){
+ImageCache = function (){
     this.initialize.apply(this, arguments);
 }
 
@@ -253,7 +254,7 @@ ImageCache.prototype.getErrorBitmap = function(){
 
     return null;
 };
-function RequestQueue(){
+RequestQueue = function (){
     this.initialize.apply(this, arguments);
 }
 

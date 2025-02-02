@@ -1,6 +1,5 @@
 import Window_Command from './window_command.js'
 
-// Window_HorzCommand
 //
 // The command window for the horizontal selection format.
 

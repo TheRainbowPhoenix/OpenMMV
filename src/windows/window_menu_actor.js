@@ -1,3 +1,6 @@
+import '../context.js';
+import '../context.js';
+import '../context.js';
 import Window_MenuStatus from './window_menu_status.js';
 
 // Window_MenuActor

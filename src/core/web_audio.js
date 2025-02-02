@@ -1,6 +1,4 @@
-import Utils from './utils'
-import Decrypter from './decrypter.js'
-import ResourceHandler from './resource_handler.js'
+import '../context.js'
 
 /**
  * The audio object of Web Audio API.
@@ -9,7 +7,7 @@ import ResourceHandler from './resource_handler.js'
  * @constructor
  * @param {String} url The url of the audio file
  */
-function WebAudio() {
+WebAudio = function () {
     this.initialize.apply(this, arguments);
 }
 

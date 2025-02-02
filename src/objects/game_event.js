@@ -1,12 +1,14 @@
+import '../stores';
+import '../context';
 import Game_Character from './game_character.js';
-import Game_Interpreter from './game_interpreter.js';
+
 
 // Game_Event
 //
 // The game object class for an event. It contains functionality for event page
 // switching and running parallel process events.
 
-function Game_Event() {
+Game_Event = function () {
     this.initialize.apply(this, arguments);
 }
 

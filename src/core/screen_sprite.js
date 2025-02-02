@@ -1,5 +1,4 @@
-import Utils from './utils'
-import Graphics from './graphics.js'
+import '../context.js'
 
 /**
  * The sprite which covers the entire game screen.
@@ -7,7 +6,7 @@ import Graphics from './graphics.js'
  * @class ScreenSprite
  * @constructor
  */
-function ScreenSprite() {
+ScreenSprite = function () {
     this.initialize.apply(this, arguments);
 }
 

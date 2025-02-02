@@ -1,8 +1,12 @@
+import '../stores';
+import '../context.js'
+import '../context.js';
+/* Imports */
 // Spriteset_Battle
 //
 // The set of sprites on the battle screen.
 
-function Spriteset_Battle() {
+Spriteset_Battle = function () {
     this.initialize.apply(this, arguments);
 }
 

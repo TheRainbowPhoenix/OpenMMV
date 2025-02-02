@@ -1,11 +1,14 @@
-﻿//=============================================================================
+import '../stores';
+import '../context.js';
+
+//=============================================================================
 // rpg_objects.js v1.6.2
 //=============================================================================
 // Game_Temp
 //
 // The game object class for temporary data that is not included in save data.
 
-function Game_Temp() {
+Game_Temp = function () {
     this.initialize.apply(this, arguments);
 }
 

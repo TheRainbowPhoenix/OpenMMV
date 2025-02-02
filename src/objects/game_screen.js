@@ -1,11 +1,11 @@
-import Game_Picture from './game_picture.js';
+import '../context.js';
 
 // Game_Screen
 //
 // The game object class for screen effect data, such as changes in color tone
 // and flashes.
 
-function Game_Screen() {
+Game_Screen = function () {
     this.initialize.apply(this, arguments);
 }
 

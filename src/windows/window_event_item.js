@@ -1,3 +1,5 @@
+import '../context';
+import '../context.js';
 import Window_ItemList from './window_item_list.js'
 
 // Window_EventItem

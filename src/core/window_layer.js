@@ -1,5 +1,4 @@
-import Rectangle from './rectangle.js'
-import Graphics from './graphics.js'
+import '../context.js'
 
 /**
  * The layer which contains game windows.
@@ -7,7 +6,7 @@ import Graphics from './graphics.js'
  * @class WindowLayer
  * @constructor
  */
-function WindowLayer() {
+WindowLayer = function () {
     this.initialize.apply(this, arguments);
 }
 

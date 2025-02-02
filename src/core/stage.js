@@ -1,22 +1,35 @@
+import '../context.js'
 /**
  * The root object of the display tree.
  *
  * @class Stage
  * @constructor
  */
-function Stage() {
-    this.initialize.apply(this, arguments);
+Stage = class extends PIXI.Container {
+    constructor(...args) {
+        super(...args);
+    }
+  
+    initialize() {
+        console.log("Core:Stage::initialize")
+        // The interactive flag causes a memory leak.
+        this.interactive = false;
+    }
 }
 
-Stage.prototype = Object.create(PIXI.Container.prototype);
-Stage.prototype.constructor = Stage;
+// Stage = function () {
+//     this.initialize.apply(this, arguments);
+// }
 
-Stage.prototype.initialize = function() {
-    PIXI.Container.call(this);
+// Stage.prototype = Object.create(PIXI.Container.prototype);
+// Stage.prototype.constructor = Stage;
 
-    // The interactive flag causes a memory leak.
-    this.interactive = false;
-};
+// Stage.prototype.initialize = function() {
+//     PIXI.Container.call(this);
+
+//     // The interactive flag causes a memory leak.
+//     this.interactive = false;
+// };
 
 /**
  * [read-only] The array of children of the stage.

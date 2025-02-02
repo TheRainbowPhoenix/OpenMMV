@@ -1,13 +1,11 @@
-import Game_Item from './game_item.js';
-import Game_Action from './game_action.js';
-import Game_BattlerBase from './game_battler_base.js';
-import Game_Battler from './game_battler.js';
+import '../stores';
+import '../context.js';
 
 // Game_Actor
 //
 // The game object class for an actor.
 
-function Game_Actor() {
+Game_Actor = function () {
     this.initialize.apply(this, arguments);
 }
 

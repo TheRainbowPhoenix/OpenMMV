@@ -1,20 +1,30 @@
-import Bitmap from "./bitmap";
+import '../stores';
+import '../context';
 
-function Decrypter() {
+Decrypter = function () {
     throw new Error('This is a static class');
 }
 
+/** @type {boolean} */
 Decrypter.hasEncryptedImages = false;
+/** @type {boolean} */
 Decrypter.hasEncryptedAudio = false;
 Decrypter._requestImgFile = [];
+/** @type {number} */
 Decrypter._headerlength = 16;
+/** @type {number} */
 Decrypter._xhrOk = 400;
+/** @type {string} */
 Decrypter._encryptionKey = "";
+/** @type {Array<string>} */
 Decrypter._ignoreList = [
     "img/system/Window.png"
 ];
+/** @type {string} */
 Decrypter.SIGNATURE = "5250474d56000000";
+/** @type {string} */
 Decrypter.VER = "000301";
+/** @type {string} */
 Decrypter.REMAIN = "0000000000";
 
 Decrypter.checkImgIgnore = function(url){

@@ -1,5 +1,3 @@
-import path from 'path';
-
 export default {
   input: './src/main.js',  // Entry file where all your modules are imported
   output: {
@@ -7,7 +5,7 @@ export default {
     format: 'es',  // Universal Module Definition, works with both CommonJS and global
     name: 'OpenMMV',  // Global variable name
     globals: {
-        PIXI: "PIXI",
+      PIXI: "PIXI",
     },
     strict: false,
   },

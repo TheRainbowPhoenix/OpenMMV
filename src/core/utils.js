@@ -1,9 +1,11 @@
+import '../context.js'
+
 /**
  * The static class that defines utility methods.
  *
  * @class Utils
  */
-function Utils() {
+Utils = function () {
     throw new Error('This is a static class');
 }
 

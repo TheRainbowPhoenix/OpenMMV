@@ -1,7 +1,4 @@
-import Rectangle from './rectangle.js'
-import Graphics from './graphics.js'
-import Decrypter from './decrypter.js'
-import ResourceHandler from './resource_handler.js'
+import '../context.js'
 
 /**
  * The basic object that represents an image.
@@ -11,7 +8,7 @@ import ResourceHandler from './resource_handler.js'
  * @param {Number} width The width of the bitmap
  * @param {Number} height The height of the bitmap
  */
-function Bitmap() {
+Bitmap = function () {
     this.initialize.apply(this, arguments);
 }
 

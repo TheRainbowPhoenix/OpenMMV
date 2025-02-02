@@ -1,8 +1,11 @@
+import '../context.js';
+import '../context.js';
+/* Imports */
 // Sprite_StateOverlay
 //
 // The sprite for displaying an overlay image for a state.
 
-function Sprite_StateOverlay() {
+Sprite_StateOverlay = function () {
     this.initialize.apply(this, arguments);
 }
 

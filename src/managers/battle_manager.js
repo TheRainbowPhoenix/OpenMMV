@@ -1,4 +1,9 @@
-import { $gameSystem, $gameTroop, $gameScreen, $gameParty, $gameMessage } from "./data_manager"
+import '../stores';
+import '../context.js';
+
+import '../context.js';
+import '../context.js';
+
 import AudioManager from "./audio_manager";
 import SoundManager from './sound_manager.js';
 import TextManager from './text_manager.js';
@@ -8,7 +13,7 @@ import SceneManager from './scene_manager.js';
 //
 // The static class that manages battle progress.
 
-function BattleManager() {
+BattleManager = function () {
     throw new Error('This is a static class');
 }
 

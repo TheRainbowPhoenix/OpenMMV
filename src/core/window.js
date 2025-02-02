@@ -1,7 +1,4 @@
-import Point from './point.js'
-import Rectangle from './rectangle.js'
-import Bitmap from './bitmap.js'
-import Sprite from './sprite.js'
+import '../context.js'
 
 /**
  * The window in the game.
@@ -9,7 +6,7 @@ import Sprite from './sprite.js'
  * @class Window
  * @constructor
  */
-function Window() {
+Window = function () {
     this.initialize.apply(this, arguments);
 }
 

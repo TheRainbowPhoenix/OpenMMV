@@ -1,3 +1,4 @@
+import '../context';
 import Window_Base from './window_base.js';
 
 // Window_Help

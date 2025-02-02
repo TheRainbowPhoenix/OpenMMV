@@ -1,11 +1,12 @@
-//=============================================================================
-// rpg_sprites.js v1.6.2
-//=============================================================================
+import '../context.js';
+
+import Sprite from "../core/sprite.js";
+/* Imports */
 // Sprite_Base
 //
 // The sprite class with a feature which displays animations.
 
-function Sprite_Base() {
+Sprite_Base = function () {
     this.initialize.apply(this, arguments);
 }
 

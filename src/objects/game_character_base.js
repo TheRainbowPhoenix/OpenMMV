@@ -1,9 +1,12 @@
+import '../context';
+import '../context.js';
+/* Imports */
 // Game_CharacterBase
 //
 // The superclass of Game_Character. It handles basic information, such as
 // coordinates and images, shared by all characters.
 
-function Game_CharacterBase() {
+Game_CharacterBase = function () {
     this.initialize.apply(this, arguments);
 }
 

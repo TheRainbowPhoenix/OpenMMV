@@ -1,8 +1,4 @@
-import Point from './point.js'
-import Bitmap from './bitmap.js'
-import Graphics from './graphics.js'
-import Sprite from './sprite.js'
-import ScreenSprite from './screen_sprite.js'
+import '../context.js'
 
 /**
  * The weather effect which displays rain, storm, or snow.
@@ -10,7 +6,7 @@ import ScreenSprite from './screen_sprite.js'
  * @class Weather
  * @constructor
  */
-function Weather() {
+Weather = function () {
     this.initialize.apply(this, arguments);
 }
 

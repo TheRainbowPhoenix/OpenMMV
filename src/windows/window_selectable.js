@@ -1,3 +1,5 @@
+import '../context.js';
+import '../context.js';
 import Window_Base from './window_base.js';
 
 // Window_Selectable

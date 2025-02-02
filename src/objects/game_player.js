@@ -1,12 +1,15 @@
+import '../stores';
+import '../context';
+
 import Game_Character from './game_character.js';
-import Game_Followers from './game_followers.js';
+
 
 // Game_Player
 //
 // The game object class for the player. It contains event starting
 // determinants and map scrolling functions.
 
-function Game_Player() {
+Game_Player = function () {
     this.initialize.apply(this, arguments);
 }
 

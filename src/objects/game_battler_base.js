@@ -1,8 +1,12 @@
+import '../stores';
+import '../context.js';
+
+/* Imports */
 // Game_BattlerBase
 //
 // The superclass of Game_Battler. It mainly contains parameters calculation.
 
-function Game_BattlerBase() {
+Game_BattlerBase = function () {
     this.initialize.apply(this, arguments);
 }
 

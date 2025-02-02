@@ -1,8 +1,12 @@
+import '../context.js';
+
+import Sprite from "../core/sprite.js";
+/* Imports */
 // Sprite_Damage
 //
 // The sprite for displaying a popup damage.
 
-function Sprite_Damage() {
+Sprite_Damage = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -1,9 +1,11 @@
+import '../context.js';
+/* Imports */
 // Game_Message
 //
 // The game object class for the state of the message window that displays text
 // or selections, etc.
 
-function Game_Message() {
+Game_Message = function () {
     this.initialize.apply(this, arguments);
 }
 

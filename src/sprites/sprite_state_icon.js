@@ -1,8 +1,11 @@
+import '../context.js';
+import Sprite from "../core/sprite.js";
+/* Imports */
 // Sprite_StateIcon
 //
 // The sprite for displaying state icons.
 
-function Sprite_StateIcon() {
+Sprite_StateIcon = function () {
     this.initialize.apply(this, arguments);
 }
 

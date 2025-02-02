@@ -1,4 +1,4 @@
-import Decrypter from './decrypter.js'
+import "../context";
 
 /**
  * The static class that handles HTML5 Audio.
@@ -6,7 +6,7 @@ import Decrypter from './decrypter.js'
  * @class Html5Audio
  * @constructor
  */
-function Html5Audio() {
+Html5Audio = function () {
     throw new Error('This is a static class');
 }
 
@@ -31,7 +31,6 @@ Html5Audio.setup = function (url) {
         this.initialize();
     }
     this.clear();
-
     if(Decrypter.hasEncryptedAudio && this._audioElement.src) {
         window.URL.revokeObjectURL(this._audioElement.src);
     }

@@ -1,6 +1,6 @@
-import StorageManager from "./storage_manager"
-import ImageManager from "./image_manager"
-import BattleManager from './battle_manager.js'
+import '../context.js'
+import '../context.js';
+import '../context.js';
 
 //=============================================================================
 // rpg_managers.js v1.6.2
@@ -9,39 +9,9 @@ import BattleManager from './battle_manager.js'
 //
 // The static class that manages the database and game objects.
 
-function DataManager() {
+DataManager = function () {
     throw new Error('This is a static class');
 }
-
-export var $dataActors       = null;
-export var $dataClasses      = null;
-export var $dataSkills       = null;
-export var $dataItems        = null;
-export var $dataWeapons      = null;
-export var $dataArmors       = null;
-export var $dataEnemies      = null;
-export var $dataTroops       = null;
-export var $dataStates       = null;
-export var $dataAnimations   = null;
-export var $dataTilesets     = null;
-export var $dataCommonEvents = null;
-export var $dataSystem       = null;
-export var $dataMapInfos     = null;
-export var $dataMap          = null;
-export var $gameTemp         = null;
-export var $gameSystem       = null;
-export var $gameScreen       = null;
-export var $gameTimer        = null;
-export var $gameMessage      = null;
-export var $gameSwitches     = null;
-export var $gameVariables    = null;
-export var $gameSelfSwitches = null;
-export var $gameActors       = null;
-export var $gameParty        = null;
-export var $gameTroop        = null;
-export var $gameMap          = null;
-export var $gamePlayer       = null;
-export var $testEvent        = null;
 
 DataManager._globalId       = 'RPGMV';
 DataManager._lastAccessedId = 1;

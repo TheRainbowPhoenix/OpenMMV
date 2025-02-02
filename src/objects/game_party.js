@@ -1,4 +1,6 @@
-import Game_Item from './game_item.js';
+import '../stores';
+import '../context.js';
+
 import Game_Unit from './game_unit.js';
 
 // Game_Party
@@ -6,7 +8,7 @@ import Game_Unit from './game_unit.js';
 // The game object class for the party. Information such as gold and items is
 // included.
 
-function Game_Party() {
+Game_Party = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -1,10 +1,13 @@
-import Game_Character from './game_character.js';
+import '../stores';
+import '../context.js';
+
+import { Window_MenuCommand } from '../windows/index';
 
 // Game_Interpreter
 //
 // The interpreter for running event commands.
 
-function Game_Interpreter() {
+Game_Interpreter = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -1,7 +1,4 @@
-import Bitmap from './bitmap.js';
-import Point from './point.js'
-import Rectangle from './rectangle.js'
-import Sprite from './sprite.js'
+import '../context.js'
 /**
  * The sprite object for a tiling image.
  *
@@ -9,7 +6,7 @@ import Sprite from './sprite.js'
  * @constructor
  * @param {Bitmap} bitmap The image for the tiling sprite
  */
-function TilingSprite() {
+TilingSprite = function () {
     this.initialize.apply(this, arguments);
 }
 

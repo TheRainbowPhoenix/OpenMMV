@@ -1,14 +1,12 @@
-import Game_CommonEvent from './game_common_event.js';
-import Game_Vehicle from './game_vehicle.js';
-import Game_Event from './game_event.js';
-import Game_Interpreter from './game_interpreter.js';
+import '../stores';
+import '../context';
 
 // Game_Map
 //
 // The game object class for a map. It contains scrolling and passage
 // determination functions.
 
-function Game_Map() {
+Game_Map = function () {
     this.initialize.apply(this, arguments);
 }
 

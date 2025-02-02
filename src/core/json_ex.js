@@ -1,11 +1,11 @@
-import Bitmap from './bitmap.js'
+import '../context.js'
 
 /**
  * The static class that handles JSON with object information.
  *
  * @class JsonEx
  */
-function JsonEx() {
+JsonEx = function () {
     throw new Error('This is a static class');
 }
 

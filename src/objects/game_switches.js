@@ -1,8 +1,10 @@
+import '../stores';
+import '../context.js';
 // Game_Switches
 //
 // The game object class for switches.
 
-function Game_Switches() {
+Game_Switches = function () {
     this.initialize.apply(this, arguments);
 }
 

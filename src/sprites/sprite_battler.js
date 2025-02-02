@@ -1,8 +1,13 @@
+import '../stores';
+import '../context.js';
+
+import '../context.js';
+
 // Sprite_Battler
 //
 // The superclass of Sprite_Actor and Sprite_Enemy.
 
-function Sprite_Battler() {
+Sprite_Battler = function () {
     this.initialize.apply(this, arguments);
 }
 

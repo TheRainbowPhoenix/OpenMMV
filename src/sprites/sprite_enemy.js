@@ -1,8 +1,11 @@
+import '../context.js'
+import '../context.js';
+/* Imports */
 // Sprite_Enemy
 //
 // The sprite for displaying an enemy.
 
-function Sprite_Enemy() {
+Sprite_Enemy = function () {
     this.initialize.apply(this, arguments);
 }
 

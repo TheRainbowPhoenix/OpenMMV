@@ -1,3 +1,5 @@
+import '../context';
+import '../context.js';
 import Window_HorzCommand from './window_horz_command.js';
 
 // Window_ItemCategory

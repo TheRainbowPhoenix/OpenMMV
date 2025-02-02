@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:prod": "rollup -c rollup.config.mjs",
+    "build:prod": "vite build",
+    "build:prod:rollup": "rollup -c rollup.config.mjs",
     "build:runtime": "node scripts/bundle.js",
     "build:core": "rollup -c modules/core/rollup.config.mjs",
     "build:managers": "rollup -c modules/managers/rollup.config.mjs",
@@ -29,6 +30,7 @@
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@types/pixi.js": "^5.0.0",
-    "rollup": "^4.32.1"
+    "rollup": "^4.32.1",
+    "vite": "^6.0.11"
   }
 }

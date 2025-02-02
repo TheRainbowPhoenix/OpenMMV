@@ -1,11 +1,12 @@
-import Game_Interpreter from './game_interpreter.js';
+import '../stores';
+import '../context';
 
 // Game_CommonEvent
 //
 // The game object class for a common event. It contains functionality for
 // running parallel process events.
 
-function Game_CommonEvent() {
+Game_CommonEvent = function () {
     this.initialize.apply(this, arguments);
 }
 

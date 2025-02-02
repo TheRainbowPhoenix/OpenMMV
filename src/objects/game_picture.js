@@ -1,8 +1,11 @@
+import '../stores';
+import '../context.js';
+
 // Game_Picture
 //
 // The game object class for a picture.
 
-function Game_Picture() {
+Game_Picture = function () {
     this.initialize.apply(this, arguments);
 }
 

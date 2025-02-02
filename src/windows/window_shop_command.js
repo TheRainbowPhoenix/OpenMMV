@@ -1,3 +1,5 @@
+import '../context.js';
+import '../context.js';
 import Window_HorzCommand from './window_horz_command.js';
 
 // Window_ShopCommand

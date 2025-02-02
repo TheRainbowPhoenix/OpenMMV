@@ -1,11 +1,10 @@
-import { $dataSystem } from "./data_manager"
-import AudioManager from "./audio_manager";
+import '../stores';
 
 // SoundManager
 //
 // The static class that plays sound effects defined in the database.
 
-function SoundManager() {
+SoundManager = function () {
     throw new Error('This is a static class');
 }
 

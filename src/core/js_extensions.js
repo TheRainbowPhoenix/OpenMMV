@@ -1,13 +1,12 @@
-//=============================================================================
-// rpg_core.js v1.6.2
-//=============================================================================
+import '../context.js'
+
 /**
  * This is not a class, but contains some methods that will be added to the
  * standard Javascript objects.
  *
  * @class JsExtensions
  */
-function JsExtensions() {
+JsExtensions = function () {
     throw new Error('This is not a class');
 }
 

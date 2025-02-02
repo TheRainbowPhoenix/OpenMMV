@@ -1,10 +1,10 @@
-import { $dataSystem } from "./data_manager"
+import '../stores';
 
 // TextManager
 //
 // The static class that handles terms and messages.
 
-function TextManager() {
+TextManager = function () {
     throw new Error('This is a static class');
 }
 

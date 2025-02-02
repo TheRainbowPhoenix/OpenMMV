@@ -1,8 +1,10 @@
+import '../context.js';
+
 // StorageManager
 //
 // The static class that manages storage for saving game data.
 
-function StorageManager() {
+StorageManager = function () {
     throw new Error('This is a static class');
 }
 

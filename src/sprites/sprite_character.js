@@ -1,8 +1,11 @@
+import '../context.js';
+import '../context.js';
+/* Imports */
 // Sprite_Character
 //
 // The sprite for displaying a character.
 
-function Sprite_Character() {
+Sprite_Character = function () {
     this.initialize.apply(this, arguments);
 }
 

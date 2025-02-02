@@ -1,8 +1,11 @@
+import '../context.js'
+
+/* Imports */
 // AudioManager
 //
 // The static class that handles BGM, BGS, ME and SE.
 
-function AudioManager() {
+AudioManager = function () {
     throw new Error('This is a static class');
 }
 

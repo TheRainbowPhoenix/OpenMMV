@@ -1,3 +1,5 @@
+import '../context';
+import '../context.js';
 import Window_Selectable from './window_selectable.js';
 
 // Window_Status

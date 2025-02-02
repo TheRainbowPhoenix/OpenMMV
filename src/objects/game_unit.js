@@ -1,8 +1,11 @@
+import '../stores';
+import '../context.js';
+
 // Game_Unit
 //
 // The superclass of Game_Party and Game_Troop.
 
-function Game_Unit() {
+Game_Unit = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -1,3 +1,5 @@
+import '../stores';
+import '../context';
 import Window_Selectable from './window_selectable.js';
 
 // Window_BattleStatus

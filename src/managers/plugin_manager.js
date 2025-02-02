@@ -1,8 +1,10 @@
+import '../context.js';
+
 // PluginManager
 //
 // The static class that manages the plugins.
 
-function PluginManager() {
+PluginManager = function () {
     throw new Error('This is a static class');
 }
 

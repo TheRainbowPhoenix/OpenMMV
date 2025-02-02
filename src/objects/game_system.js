@@ -1,8 +1,11 @@
+import '../stores';
+import '../context.js';
+/* Imports */
 // Game_System
 //
 // The game object class for the system data.
 
-function Game_System() {
+Game_System = function () {
     this.initialize.apply(this, arguments);
 }
 

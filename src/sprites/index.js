@@ -1,3 +1,7 @@
+//=============================================================================
+// rpg_sprites.js v1.6.2
+//=============================================================================
+
 import Sprite_Base from './sprite_base.js'
 import Sprite_Button from './sprite_button.js'
 import Sprite_Character from './sprite_character.js'

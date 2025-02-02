@@ -1,63 +1,100 @@
-import Scene_Base from './scene_base.js';
+import '../context.js';
+import { Window_Help } from '../windows/index';
 
-// Scene_MenuBase
-//
-// The superclass of all the menu-type scenes.
+/**
+ * The superclass of all the menu-type scenes.
+ * 
+ * @class Scene_MenuBase
+ * @extends Scene_Base
+ */
+Scene_MenuBase = class extends Scene_Base {
+    constructor(...args) {
+        super(...args);
+    }
 
-function Scene_MenuBase() {
-    this.initialize.apply(this, arguments);
+    /**
+     * Initialize the menu scene.
+     */
+    initialize() {
+        super.initialize();
+    }
+
+    /**
+     * Create the components for the menu scene.
+     */
+    create() {
+        super.create();
+        this.createBackground();
+        this.updateActor();
+        this.createWindowLayer();
+    }
+
+    /**
+     * Get the current actor in the menu.
+     * 
+     * @return {Game_Actor} The current actor
+     */
+    actor() {
+        return this._actor;
+    }
+
+    /**
+     * Update the current actor.
+     */
+    updateActor() {
+        this._actor = $gameParty.menuActor();
+    }
+
+    /**
+     * Create the background for the menu scene.
+     */
+    createBackground() {
+        this._backgroundSprite = new Sprite();
+        this._backgroundSprite.bitmap = SceneManager.backgroundBitmap();
+        this.addChild(this._backgroundSprite);
+    }
+
+    /**
+     * Set the background opacity.
+     * 
+     * @param {Number} opacity The opacity to set (0 to 255)
+     */
+    setBackgroundOpacity(opacity) {
+        this._backgroundSprite.opacity = opacity;
+    }
+
+    /**
+     * Create the help window.
+     */
+    createHelpWindow() {
+        this._helpWindow = new Window_Help();
+        this.addWindow(this._helpWindow);
+    }
+
+    /**
+     * Switch to the next actor in the menu.
+     */
+    nextActor() {
+        $gameParty.makeMenuActorNext();
+        this.updateActor();
+        this.onActorChange();
+    }
+
+    /**
+     * Switch to the previous actor in the menu.
+     */
+    previousActor() {
+        $gameParty.makeMenuActorPrevious();
+        this.updateActor();
+        this.onActorChange();
+    }
+
+    /**
+     * Handle the event when the actor changes.
+     */
+    onActorChange() {
+        // Can be overridden in subclasses
+    }
 }
-
-Scene_MenuBase.prototype = Object.create(Scene_Base.prototype);
-Scene_MenuBase.prototype.constructor = Scene_MenuBase;
-
-Scene_MenuBase.prototype.initialize = function() {
-    Scene_Base.prototype.initialize.call(this);
-};
-
-Scene_MenuBase.prototype.create = function() {
-    Scene_Base.prototype.create.call(this);
-    this.createBackground();
-    this.updateActor();
-    this.createWindowLayer();
-};
-
-Scene_MenuBase.prototype.actor = function() {
-    return this._actor;
-};
-
-Scene_MenuBase.prototype.updateActor = function() {
-    this._actor = $gameParty.menuActor();
-};
-
-Scene_MenuBase.prototype.createBackground = function() {
-    this._backgroundSprite = new Sprite();
-    this._backgroundSprite.bitmap = SceneManager.backgroundBitmap();
-    this.addChild(this._backgroundSprite);
-};
-
-Scene_MenuBase.prototype.setBackgroundOpacity = function(opacity) {
-    this._backgroundSprite.opacity = opacity;
-};
-
-Scene_MenuBase.prototype.createHelpWindow = function() {
-    this._helpWindow = new Window_Help();
-    this.addWindow(this._helpWindow);
-};
-
-Scene_MenuBase.prototype.nextActor = function() {
-    $gameParty.makeMenuActorNext();
-    this.updateActor();
-    this.onActorChange();
-};
-
-Scene_MenuBase.prototype.previousActor = function() {
-    $gameParty.makeMenuActorPrevious();
-    this.updateActor();
-    this.onActorChange();
-};
-
-Scene_MenuBase.prototype.onActorChange = function() {
-};
 
 export default Scene_MenuBase;

@@ -1,51 +1,51 @@
-import Scene_File from './scene_file.js';
+import '../context.js';
+// import Scene_File from './scene_file.js';
 
 // Scene_Save
 //
 // The scene class of the save screen.
 
-function Scene_Save() {
-    this.initialize.apply(this, arguments);
-}
-
-Scene_Save.prototype = Object.create(Scene_File.prototype);
-Scene_Save.prototype.constructor = Scene_Save;
-
-Scene_Save.prototype.initialize = function() {
-    Scene_File.prototype.initialize.call(this);
-};
-
-Scene_Save.prototype.mode = function() {
-    return 'save';
-};
-
-Scene_Save.prototype.helpWindowText = function() {
-    return TextManager.saveMessage;
-};
-
-Scene_Save.prototype.firstSavefileIndex = function() {
-    return DataManager.lastAccessedSavefileId() - 1;
-};
-
-Scene_Save.prototype.onSavefileOk = function() {
-    Scene_File.prototype.onSavefileOk.call(this);
-    $gameSystem.onBeforeSave();
-    if (DataManager.saveGame(this.savefileId())) {
-        this.onSaveSuccess();
-    } else {
-        this.onSaveFailure();
+Scene_Save = class extends Scene_File {
+    constructor(...args) {
+        super(...args);
     }
-};
 
-Scene_Save.prototype.onSaveSuccess = function() {
-    SoundManager.playSave();
-	StorageManager.cleanBackup(this.savefileId());
-    this.popScene();
-};
+    initialize() {
+        super.initialize();
+    }
 
-Scene_Save.prototype.onSaveFailure = function() {
-    SoundManager.playBuzzer();
-    this.activateListWindow();
-};
+    mode() {
+        return 'save';
+    }
+
+    helpWindowText() {
+        return TextManager.saveMessage;
+    }
+
+    firstSavefileIndex() {
+        return DataManager.lastAccessedSavefileId() - 1;
+    }
+
+    onSavefileOk() {
+        super.onSavefileOk();
+        $gameSystem.onBeforeSave();
+        if (DataManager.saveGame(this.savefileId())) {
+            this.onSaveSuccess();
+        } else {
+            this.onSaveFailure();
+        }
+    }
+
+    onSaveSuccess() {
+        SoundManager.playSave();
+        StorageManager.cleanBackup(this.savefileId());
+        this.popScene();
+    }
+
+    onSaveFailure() {
+        SoundManager.playBuzzer();
+        this.activateListWindow();
+    }
+}
 
 export default Scene_Save;

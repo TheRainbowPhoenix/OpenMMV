@@ -1,5 +1,4 @@
-import Utils from './utils'
-import Graphics from './graphics.js'
+import '../context.js'
 
 /**
  * The sprite which changes the screen color in 2D canvas mode.
@@ -7,7 +6,7 @@ import Graphics from './graphics.js'
  * @class ToneSprite
  * @constructor
  */
-function ToneSprite() {
+ToneSprite = function () {
     this.initialize.apply(this, arguments);
 }
 

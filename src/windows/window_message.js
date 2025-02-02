@@ -1,3 +1,6 @@
+import '../context.js'
+import '../context.js';
+import '../context.js';
 import Window_Base from './window_base.js';
 import Window_Gold from './window_gold.js';
 import Window_ChoiceList from './window_choice_list.js';

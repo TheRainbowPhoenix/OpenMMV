@@ -1,10 +1,13 @@
+import '../stores';
+import '../context.js';
+
 import Game_Character from './game_character.js';
 
 // Game_Vehicle
 //
 // The game object class for a vehicle.
 
-function Game_Vehicle() {
+Game_Vehicle = function () {
     this.initialize.apply(this, arguments);
 }
 

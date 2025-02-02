@@ -1,3 +1,6 @@
+import '../stores';
+import '../context';
+import '../context.js';
 import Window_Command from './window_command.js'
 
 // Window_ActorCommand

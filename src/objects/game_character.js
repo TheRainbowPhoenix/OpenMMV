@@ -1,10 +1,11 @@
+import '../context.js';
 import Game_CharacterBase from './game_character_base.js';
 
 // Game_Character
 //
 // The superclass of Game_Player, Game_Follower, GameVehicle, and Game_Event.
 
-function Game_Character() {
+Game_Character = function () {
     this.initialize.apply(this, arguments);
 }
 

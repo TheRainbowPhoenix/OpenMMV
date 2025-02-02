@@ -1,3 +1,4 @@
+import '../context.js';
 import Window_SkillList from './window_skill_list.js';
 
 // Window_BattleSkill

@@ -1,4 +1,6 @@
+import '../context';
 import Window_Selectable from './window_selectable.js';
+import '../stores';
 
 // Window_BattleEnemy
 //

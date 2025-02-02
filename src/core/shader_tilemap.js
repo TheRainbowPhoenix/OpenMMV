@@ -1,4 +1,4 @@
-import Tilemap from './tilemap.js'
+import '../context.js'
 
 /**
  * The tilemap which displays 2D tile-based game map using shaders
@@ -6,7 +6,7 @@ import Tilemap from './tilemap.js'
  * @class Tilemap
  * @constructor
  */
-function ShaderTilemap() {
+ShaderTilemap = function () {
     Tilemap.apply(this, arguments);
     this.roundPixels = true;
 }

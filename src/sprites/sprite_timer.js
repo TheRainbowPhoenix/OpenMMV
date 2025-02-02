@@ -1,8 +1,11 @@
+import '../context.js'
+import Sprite from "../core/sprite.js";
+/* Imports */
 // Sprite_Timer
 //
 // The sprite for displaying the timer.
 
-function Sprite_Timer() {
+Sprite_Timer = function () {
     this.initialize.apply(this, arguments);
 }
 

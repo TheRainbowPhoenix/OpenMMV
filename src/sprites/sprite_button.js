@@ -1,8 +1,12 @@
+import '../context.js';
+
+import Sprite from "../core/sprite.js";
+/* Imports */
 // Sprite_Button
 //
 // The sprite for displaying a button.
 
-function Sprite_Button() {
+Sprite_Button = function () {
     this.initialize.apply(this, arguments);
 }
 

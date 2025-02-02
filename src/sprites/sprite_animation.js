@@ -1,8 +1,11 @@
+import '../context.js';
+import Sprite from "../core/sprite.js";
+/* Imports */
 // Sprite_Animation
 //
 // The sprite for displaying an animation.
 
-function Sprite_Animation() {
+Sprite_Animation = function () {
     this.initialize.apply(this, arguments);
 }
 

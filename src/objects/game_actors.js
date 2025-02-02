@@ -1,10 +1,11 @@
-import Game_Actor from './game_actor.js';
+import '../stores';
+import '../context';
 
 // Game_Actors
 //
 // The wrapper class for an actor array.
 
-function Game_Actors() {
+Game_Actors = function () {
     this.initialize.apply(this, arguments);
 }
 

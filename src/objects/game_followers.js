@@ -1,10 +1,11 @@
-import Game_Follower from './game_follower.js';
+import '../stores';
+import '../context';
 
 // Game_Followers
 //
 // The wrapper class for a follower array.
 
-function Game_Followers() {
+Game_Followers = function () {
     this.initialize.apply(this, arguments);
 }
 

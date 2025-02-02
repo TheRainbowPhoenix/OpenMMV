@@ -1,3 +1,4 @@
+import '../context.js'
 /**
  * The color matrix filter for WebGL.
  *
@@ -5,7 +6,7 @@
  * @extends PIXI.Filter
  * @constructor
  */
-function ToneFilter() {
+ToneFilter = function () {
     PIXI.filters.ColorMatrixFilter.call(this);
 }
 

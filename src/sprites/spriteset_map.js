@@ -1,8 +1,11 @@
+import '../context';
+import '../context.js';
+/* Imports */
 // Spriteset_Map
 //
 // The set of sprites on the map screen.
 
-function Spriteset_Map() {
+Spriteset_Map = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -1,6 +1,4 @@
-import Utils from './utils'
-import Rectangle from './rectangle.js'
-import Graphics from './graphics.js'
+import '../context.js'
 
 /**
  * The basic object that is rendered to the game screen.
@@ -9,7 +7,7 @@ import Graphics from './graphics.js'
  * @constructor
  * @param {Bitmap} bitmap The image for the sprite
  */
-function Sprite() {
+Sprite = function () {
     this.initialize.apply(this, arguments);
 }
 

@@ -1,12 +1,13 @@
-import Game_Enemy from './game_enemy.js';
+import '../stores';
+import '../context.js';
+
 import Game_Unit from './game_unit.js';
-import Game_Interpreter from './game_interpreter.js';
 
 // Game_Troop
 //
 // The game object class for a troop and the battle-related data.
 
-function Game_Troop() {
+Game_Troop = function () {
     this.initialize.apply(this, arguments);
 }
 

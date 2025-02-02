@@ -1,3 +1,4 @@
+import '../context.js';
 import Window_BattleStatus from './window_battle_status.js';
 
 // Window_BattleActor

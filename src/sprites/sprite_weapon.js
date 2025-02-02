@@ -1,8 +1,11 @@
+import '../context.js';
+import '../context.js';
+/* Imports */
 // Sprite_Weapon
 //
 // The sprite for displaying a weapon image for attacking.
 
-function Sprite_Weapon() {
+Sprite_Weapon = function () {
     this.initialize.apply(this, arguments);
 }
 

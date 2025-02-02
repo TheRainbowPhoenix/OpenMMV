@@ -1,22 +1,32 @@
-# Open MV
+# OpenMaker MV
 
 Tiny RPG engine, MV compatible
 
 ## Quick start
 
-**installation**
+It provides two files: `runtime.js` and `openmmv.js`. Use both to be compatible with RPG MV. Plugins are supported out of the box.
+
+**build**
 
 ```bash
 $ cd openmv
 $ npm install
-$ npm run dev -- --host
+$ npm run build:runtime
+$ npm run build:prod
 ```
 
-**build**
+## Use on your games
 
+Add the following lines to the `index.html`
+
+```html
+<script type="text/javascript" src="js/runtime.js"></script>
+<script type="text/javascript" src="js/openmmv.js"></script>
 ```
-$ npm run build
-```
+
+## Open Maker Engine (GUI)
+
+TODO...
 
 ## Docker
 
@@ -25,16 +35,3 @@ $ cd openmv
 $ docker build -t openmv .
 $ docker run --name openmv-container -p 5173:5173 openmv
 ```
-
-### Installed deps
-
-**dependencies**
-
-- pixi.js
-- @pixi/sound
-- @pixi/gif
-
-**dev-dependencies**
-
-- typescript
-- vite

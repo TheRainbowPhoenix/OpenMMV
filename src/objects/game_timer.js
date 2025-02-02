@@ -1,8 +1,9 @@
+import '../context.js';
 // Game_Timer
 //
 // The game object class for the timer.
 
-function Game_Timer() {
+Game_Timer = function () {
     this.initialize.apply(this, arguments);
 }
 

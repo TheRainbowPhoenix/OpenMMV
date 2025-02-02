@@ -1,8 +1,11 @@
+import '../context.js'
+import Sprite from "../core/sprite.js";
+/* Imports */
 // Spriteset_Base
 //
 // The superclass of Spriteset_Map and Spriteset_Battle.
 
-function Spriteset_Base() {
+Spriteset_Base = function () {
     this.initialize.apply(this, arguments);
 }
 

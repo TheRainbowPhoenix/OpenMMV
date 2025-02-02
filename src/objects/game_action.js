@@ -1,10 +1,12 @@
-import Game_Item from './game_item.js';
+import '../stores';
+import '../context'
+
 
 // Game_Action
 //
 // The game object class for a battle action.
 
-function Game_Action() {
+Game_Action = function () {
     this.initialize.apply(this, arguments);
 }
 
